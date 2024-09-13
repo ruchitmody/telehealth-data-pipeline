@@ -1,0 +1,98 @@
+[0m22:57:44.684106 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10245cf70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104a1e430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104a1e760>]}
+
+
+============================== 22:57:44.686438 | 6f4ae872-4e58-472a-8b02-7b85ae00687e ==============================
+[0m22:57:44.686438 [info ] [MainThread]: Running with dbt=1.8.6
+[0m22:57:44.686706 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/ruchitmody/.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt init dbt_project', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m22:57:44.691047 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse dict {'dir': PosixPath('/Users/ruchitmody/.dbt')}
+[0m22:57:44.691212 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m22:57:44.691794 [debug] [MainThread]: Starter project path: /Users/ruchitmody/Documents/projects/telehealth-data-pipeline/venv/lib/python3.9/site-packages/dbt/include/starter_project
+[0m22:57:44.694042 [info ] [MainThread]: 
+Your new dbt project "dbt_project" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m22:57:44.694187 [info ] [MainThread]: Setting up your profile.
+[0m22:59:52.923912 [info ] [MainThread]: Profile dbt_project written to /Users/ruchitmody/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m22:59:52.946649 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 128.29465, "process_user_time": 0.750933, "process_kernel_time": 0.116404, "process_mem_max_rss": "97714176", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m22:59:52.948405 [debug] [MainThread]: Command `dbt init` succeeded at 22:59:52.948233 after 128.30 seconds
+[0m22:59:52.948860 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10245cf70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10440d0d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104d1c640>]}
+[0m22:59:52.949308 [debug] [MainThread]: Flushing usage events
+[0m23:41:52.066589 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10246dd60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103efd1f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103efd520>]}
+
+
+============================== 23:41:52.068889 | 364a0560-1274-402d-9677-ae6da22e1afa ==============================
+[0m23:41:52.068889 [info ] [MainThread]: Running with dbt=1.8.6
+[0m23:41:52.069151 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/ruchitmody/.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'invocation_command': 'dbt run', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m23:41:52.069412 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/ruchitmody/Documents/projects/telehealth-data-pipeline/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m23:41:52.070120 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 0.034772668, "process_user_time": 0.551441, "process_kernel_time": 0.075301, "process_mem_max_rss": "89276416", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m23:41:52.070387 [debug] [MainThread]: Command `dbt run` failed at 23:41:52.070342 after 0.04 seconds
+[0m23:41:52.070535 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10246dd60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103ebd190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103ebd160>]}
+[0m23:41:52.070672 [debug] [MainThread]: Flushing usage events
+[0m23:42:34.101917 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106089e20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107b09ee0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107b09bb0>]}
+
+
+============================== 23:42:34.104434 | ab5e68d4-6436-46ab-a4e8-cb60b8a43739 ==============================
+[0m23:42:34.104434 [info ] [MainThread]: Running with dbt=1.8.6
+[0m23:42:34.104747 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'profiles_dir': '/Users/ruchitmody/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init dbt_project', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m23:42:34.113776 [info ] [MainThread]: A project called dbt_project already exists here.
+[0m23:42:34.114529 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 0.046636667, "process_user_time": 0.581385, "process_kernel_time": 0.062246, "process_mem_max_rss": "89718784", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m23:42:34.114829 [debug] [MainThread]: Command `dbt init` succeeded at 23:42:34.114776 after 0.05 seconds
+[0m23:42:34.114996 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106089e20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107ab7160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107b570d0>]}
+[0m23:42:34.115160 [debug] [MainThread]: Flushing usage events
+[0m09:22:22.519665 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1060addc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107b2eee0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107b2ebb0>]}
+
+
+============================== 09:22:22.522058 | bb62ae30-b8a0-4dec-92fc-efe3d53d8cc9 ==============================
+[0m09:22:22.522058 [info ] [MainThread]: Running with dbt=1.8.6
+[0m09:22:22.522332 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '/Users/ruchitmody/.dbt', 'log_path': 'logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init dbt_project', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m09:22:22.528492 [info ] [MainThread]: A project called dbt_project already exists here.
+[0m09:22:22.529165 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 0.039773043, "process_user_time": 0.576304, "process_kernel_time": 0.060531, "process_mem_max_rss": "86933504", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m09:22:22.529402 [debug] [MainThread]: Command `dbt init` succeeded at 09:22:22.529359 after 0.04 seconds
+[0m09:22:22.529549 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1060addc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107b2eee0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107b8e820>]}
+[0m09:22:22.529695 [debug] [MainThread]: Flushing usage events
+[0m09:22:30.575005 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104b75d90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1065f4d90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1065f4a60>]}
+
+
+============================== 09:22:30.576963 | 06de78b8-ade2-4236-b8c5-cbf3193158cf ==============================
+[0m09:22:30.576963 [info ] [MainThread]: Running with dbt=1.8.6
+[0m09:22:30.577214 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'profiles_dir': '/Users/ruchitmody/.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'invocation_command': 'dbt run', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m09:22:30.577422 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/ruchitmody/Documents/projects/telehealth-data-pipeline/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m09:22:30.578083 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 0.030304832, "process_user_time": 0.527345, "process_kernel_time": 0.060638, "process_mem_max_rss": "86704128", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m09:22:30.578332 [debug] [MainThread]: Command `dbt run` failed at 09:22:30.578289 after 0.03 seconds
+[0m09:22:30.578479 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104b75d90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1065f44f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1065f4610>]}
+[0m09:22:30.578635 [debug] [MainThread]: Flushing usage events
+[0m10:40:48.737504 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1045a5d30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106c5d100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106c5d430>]}
+
+
+============================== 10:40:48.740065 | d051e437-1678-444d-9b22-f7f122db2a0e ==============================
+[0m10:40:48.740065 [info ] [MainThread]: Running with dbt=1.8.6
+[0m10:40:48.740343 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'debug': 'False', 'profiles_dir': '/Users/ruchitmody/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m10:40:48.740604 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/ruchitmody/Documents/projects/telehealth-data-pipeline/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m10:40:48.741328 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 0.034425292, "process_user_time": 0.548222, "process_kernel_time": 0.078224, "process_mem_max_rss": "89325568", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m10:40:48.741585 [debug] [MainThread]: Command `dbt run` failed at 10:40:48.741543 after 0.03 seconds
+[0m10:40:48.741733 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1045a5d30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106c5d9d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106c5d250>]}
+[0m10:40:48.741882 [debug] [MainThread]: Flushing usage events
